@@ -1,0 +1,19 @@
+{
+	"scopeName": "source.turn",
+	"name": "Turn",
+	"fileTypes": ["turn"],
+	"patterns": [
+		{
+			"name": "keyword.control.turn",
+			"match": "(?<=[^\\w-]|^)(actor|goal|softgoal|task|strategy)(?=[^\\w-]|$)"
+		},
+		{
+			"name": "keyword.operator.turn",
+			"match": "\\b(dependsOn|contributesTo|current|delete|deprecated|false|invert-match|max|min|not|not-supported|obsolete|or|replace|system|true|unbounded|=>)\\b"
+		},
+		{
+			"name": "constant.numeric.states",
+			"match": "(?<=[^\\w-]|^)(importance)(?=[^\\w-]|$)"
+		}
+	]
+}
